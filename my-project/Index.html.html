@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Eli Eye and Dialysis Center</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<style>
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 120;
+    background-color: #EDEDED;
+    color: #5C3A21;
+  }
+  header {
+    background-color: #5C3A21;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+  font-size: clamp(1.2rem, 2vw, 2.2rem);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 35px; /* space between logo image and text */
+}
+.logo img {
+  width: clamp(200px, 8vw, 2500px); /* adjust min, responsive, max width */
+  height: auto; /* maintain aspect ratio */
+  object-fit: contain;
+}
+  .hero {
+    background-color: #A67C52;
+    color: white;
+    padding: 200px 30px;
+    text-align: center;
+  }
+  section {
+    padding: 5px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  h2 { color: #A67C52; text-align: center; margin-bottom: 30px; }
+  .services, .specialists { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+  .service, .specialist { background-color: white; padding: 20px; border-radius: 10px; flex: 1 1 250px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+  footer { background-color: #5C3A21; color: white; text-align: center; padding: 30px 20px; }
+  form input, form select, form textarea {
+    width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #A67C52; border-radius: 5px;
+  }
+  form button {
+    background-color: #A67C52; color: white; padding: 20px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;
+  }
+  .social-icons a {
+    color: white; margin: 0 10px; font-size: 1.5rem; text-decoration: none;
+  }
+  @media (max-width:768px){
+    header { flex-direction: column; text-align: center; }
+    nav a { margin: 5px; display: inline-block; }
+    .services, .specialists { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->                 ONE ELI EYE & DIALYSIS CENTER                                       
+  <header>
+    <div class="logo">
+      <img src="file:///C:/Users/One_Eli/Downloads/new_logo_eye_and_dialysis-removebg-preview.png" alt="Logo">
+      <h1>ONE ELI EYE & DIALYSIS </h1>
+    </div>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about" style="color:white; margin:0 10px; text-decoration:none;">About Us</a>
+    <a href="#services" style="color:white; margin:0 10px; text-decoration:none;">Services</a>
+    <a href="#specialists" style="color:white; margin:0 10px; text-decoration:none;">Our Specialists</a>
+    <a href="#hours" style="color:white; margin:0 10px; text-decoration:none;">Clinic Hours</a>
+    <a href="#appointment" style="color:white; margin:0 10px; text-decoration:none;">Book Appointment</a>
+    <a href="#contact" style="color:white; margin:0 10px; text-decoration:none;">Contact</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Welcome to One Eli Eye and Dialysis Center</h1>
+  <p>Quality Eye and Dialysis Care You Can Trust</p>
+</div>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    One Eli Eye and Dialysis Center is dedicated to providing high-quality healthcare services, specializing in eye care and dialysis treatments. Our center offers comprehensive eye services, including routine exams, management of common and complex eye conditions, and specialized procedures, all delivered by experienced ophthalmologists using modern technology. We strive to help our patients maintain optimal vision and overall eye health.
+  </p>
+
+  <p>
+    Our dialysis unit provides safe and effective hemodialysis and peritoneal dialysis treatments for patients with chronic kidney disease. Our team of skilled nephrologists and nurses ensures that each patient receives personalized care in a supportive environment. At One Eli Eye and Dialysis Center, we are committed to improving health, enhancing quality of life, and delivering compassionate care to every patient.
+  </p>Patient who walks through our doors. located at the Ziti Center 8th St & 9th St, 7th Ave, Grace Park East, Cloocan.</p>
+</section>
+
+<section id="services">
+
+ <style>
+/* ===== SERVICES SECTION ===== */
+#services {
+  padding: 100px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+#services h2 {
+  font-size: 36px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #A67C52;
+}
+
+#services hr {
+  width: 120px;
+  height: 4px;
+  background: #A67C52;
+  border: none;
+  margin: 10px auto 40px;
+  border-radius: 2px;
+}
+
+/* GRID LAYOUT */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: auto;
+  align-items: stretch;
+}
+
+/* CARD DESIGN */
+.service-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  padding: 25px 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+}
+
+/* ICON BOX */
+.icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover .icon-box {
+  transform: scale(1.1);
+}
+
+/* SERVICE TITLE & DESCRIPTION */
+.service-card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #5C3A21;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #6b4d3a;
+  text-align: center;
+}
+
+/* DETAILS BOX (OPTIONAL COLLAPSIBLE INFO) */
+details {
+  margin-top: 40px;
+}
+
+details > summary {
+  list-style: none;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+  color: #A67C52;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.details-box {
+  padding: 15px;
+  background: #f9f9f9;
+  font-size: 14px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #services h2 {
+    font-size: 28px;
+  }
+
+  .service-card h4 {
+    font-size: 18px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+  }
+
+  .icon-box {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+}
+</style>
+
+
+  <!-- Include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<section id="services">
+  <h2>Our Services</h2>
+
+  <!-- ================= EYE SERVICES ================= -->
+  <div class="service-category">
+    <h3>👁️ Eye Services</h3>
+    <div class="services-grid">
+
+      <div class="service-card"><i class="fas fa-user-md service-icon"></i><h4>Eye Consultations</h4></div>
+      <div class="service-card"><i class="fas fa-eye service-icon"></i><h4>Retina Surgery</h4></div>
+      <div class="service-card"><i class="fas fa-clinic-medical service-icon"></i><h4>Cataract Screening & Surgery</h4></div>
+      <div class="service-card"><i class="fas fa-laser service-icon"></i><h4>Refractive Surgery (ICL)</h4></div>
+      <div class="service-card"><i class="fas fa-stethoscope service-icon"></i><h4>Glaucoma Diagnosis & Monitoring</h4></div>
+      <div class="service-card"><i class="fas fa-syringe service-icon"></i><h4>AMD Injections</h4></div>
+      <div class="service-card"><i class="fas fa-bolt service-icon"></i><h4>YAG Laser</h4></div>
+      <div class="service-card"><i class="fas fa-sun service-icon"></i><h4>Pan Retinal Photocoagulation</h4></div>
+      <div class="service-card"><i class="fas fa-microscope service-icon"></i><h4>OCT (Optical Coherence Tomography)</h4></div>
+      <div class="service-card"><i class="fas fa-chart-area service-icon"></i><h4>Tomography</h4></div>
+      <div class="service-card"><i class="fas fa-camera-retro service-icon"></i><h4>Fundus Angiography (FA)</h4></div>
+      <div class="service-card"><i class="fas fa-glasses service-icon"></i><h4>Refraction</h4></div>
+      <div class="service-card"><i class="fas fa-tint service-icon"></i><h4>Chronic Dry Eyes</h4></div>
+      <div class="service-card"><i class="fas fa-book-reader service-icon"></i><h4>Presbyopia</h4></div>
+      <div class="service-card"><i class="fas fa-heartbeat service-icon"></i><h4>Diabetic Retinopathy</h4></div>
+      <div class="service-card"><i class="fas fa-child service-icon"></i><h4>Amblyopia</h4></div>
+      <div class="service-card"><i class="fas fa-arrows-alt-h service-icon"></i><h4>Strabismus</h4></div>
+      <div class="service-card"><i class="fas fa-baby service-icon"></i><h4>Congenital Eye Diseases</h4></div>
+
+    </div>
+  </div>
+
+  <!-- ================= DIALYSIS SERVICES ================= -->
+  <div class="service-category">
+    <h3>🩺 Dialysis Services</h3>
+    <div class="services-grid">
+
+      <div class="service-card"><i class="fas fa-procedures service-icon"></i><h4>Hemodialysis</h4></div>
+      <div class="service-card"><i class="fas fa-heartbeat service-icon"></i><h4>Peritoneal Dialysis</h4></div>
+      <div class="service-card"><i class="fas fa-user-md service-icon"></i><h4>Nephrology Consultation</h4></div>
+      <div class="service-card"><i class="fas fa-vial service-icon"></i><h4>Kidney Function Testing</h4></div>
+      <div class="service-card"><i class="fas fa-hospital service-icon"></i><h4>Chronic Kidney Disease Care</h4></div>
+      <div class="service-card"><i class="fas fa-ambulance service-icon"></i><h4>Emergency Dialysis Support</h4></div>
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<section id="specialists">
+  <h2>Our Specialists</h2>
+  <div class="specialists">
+    <div class="specialist">
+      <h3>Dr. Juan Dela Cruz</h3>
+      <p>Ophthalmologist</p>
+    </div>
+
+    <div class="specialist">
+      <h3>Dr. Maria Santos</h3>
+      <p>Nephrologist</p>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <h2>Clinic Hours</h2>
+  <p>Monday – Friday: 8:00 AM – 5:00 PM</p>
+  <p>Saturday: 8:00 AM – 1:00 PM</p>
+  <p>Sunday: Closed</p>
+</section>
+
+<section id="appointment">
+  <h2>Book an Appointment</h2>
+
+  <form id="appointmentForm">
+
+    <input type="text" id="name" placeholder="Full Name" required>
+
+    <input type="email" id="email" placeholder="Email" required>
+
+    <input type="tel" id="contact" placeholder="Contact Number" required>
+
+    <select id="service" required>
+      <option value="">Select Service</option>
+      <option value="Eye Checkup">Eye Checkup</option>
+      <option value="Dialysis">Dialysis</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <input type="date" id="date" required>
+
+    <input type="time" id="time" required>
+
+    <textarea id="message" placeholder="Additional Message"></textarea>
+
+    <button type="submit">Submit Appointment</button>
+  </form>
+</section>
+
+<script>
+  const form = document.getElementById('appointmentForm');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent actual form submission
+
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const contact = document.getElementById('contact').value;
+    const service = document.getElementById('service').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+    const message = document.getElementById('message').value;
+
+    // Compose email body
+    const body = `
+Full Name: ${name}
+Email: ${email}
+Contact Number: ${contact}
+Service: ${service}
+Preferred Date: ${date}
+Preferred Time: ${time}
+Message: ${message}
+    `;
+
+    // Encode for mailto
+    const mailtoLink = `mailto:EDcenter2026ry@gmail.com?subject=Appointment Booking&body=${encodeURIComponent(body)}`;
+
+    // Open Gmail compose window
+    window.location.href = mailtoLink;
+  });
+</script>
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Address:7th 8th St & 9th St, 7th Ave, Grace Park East, Caloocan, Metro Manila</p>
+  <p>Phone: Globe +639453681717</p>
+  <p>EDcenter2026ry@gmail.com</p>
+  
+ <div class="social-icons">
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/profile.php?id=61585477444699">
+    <i class="fab fa-facebook"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/YourProfileName" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+
+<div class="company-profile">
+  <!-- Company Profile -->
+  <a href="https://www.canva.com/design/DAG0nVUV2aQ/KBT5WGQK-PUHJGi6il6EXw/view" target="_blank" rel="noopener noreferrer">
+    <i class="fas fa-building"></i> Company Profile
+  </a>
+</div>
+
+<div>
+  <a href="viber://chat?number=%2B639453681717">
+    <i class="fab fa-viber"></i> Viber Us
+  </a>
+</div>
+
+  <div style="position: relative; width: 100%; padding-bottom: 56.25%; margin-top: 20px;">
+  <!-- Responsive Google Maps Embed -->
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.123456789!2d120.988!3d14.647572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c123456789ab%3A0xabcdef123456789!2sZiti%20Center%2C%20Caloocan%20City!5e0!3m2!1sen!2sph!4v0000000000000000"
+    style="border:0; position: absolute; top:0; left:0; width:100%; height:100%;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+
+  <!-- Stylish Overlay Button -->
+   <iframe
+    src="https://www.google.com/maps?q=Ziti%20Center%20Caloocan&output=embed"
+     style="position: absolute; bottom: 15px; right: 15px; background-color: #007BFF; color: white; padding: 10px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 14px; transition: background-color 0.3s;">
+    View on Google Maps
+  </a>
+</div>
+
+
+<!-- Optional inline CSS for hover effect -->
+<style>
+  a[href*="maps.app.goo.gl"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+<footer>
+  <p>© 2026 One Eli Eye and Dialysis Center. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
